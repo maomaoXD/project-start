@@ -1,0 +1,130 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100dvh;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    min-width: 375px; /* Limit the body width to 375px */
+    margin: 0 auto; /* Center the layout horizontally */
+}
+
+header {
+    padding: clamp(1rem, yyyyy, 2rem);
+    background-color: red;
+    color: white;
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between
+    flex-wrap: wrap; /* Allow wrapping for smaller widths */
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap; /* Stack items if space is limited */
+    padding: 0;
+}
+
+.nav__item {
+    padding: 0 clamp(0.5rem, 1vw, 2rem); /* Responsive padding */
+}
+
+.nav__link {
+    display: block;
+}
+
+.section__title {
+    font-size: clamp(1.25rem, 3vw, 2rem); /* Adjust title size responsively */
+    margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+.section__description {
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* Adjust description size responsively */
+    line-height: 1.5;
+}
+
+main {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--hero{
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Ensure full width */
+    height: 300px; /* Fixed height for the hero section */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    background-color: #e0e0e0; /* Background color for the hero section */
+    text-align: center; /* Center text alignment */
+}
+
+.hero-section__title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Adjust title size responsively */
+    margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+.main-sections {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 1.5rem; /* Add spacing between grid items */
+    padding: 2rem; /* Add padding around the grid */
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.main-content__section {
+    background-color: #ffffff; /* Add a background color for sections */
+    padding: 1rem; /* Add padding inside each section */
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+
+
+
+footer {
+    padding: clamp(1rem, 2vw, 2rem);
+    background-color: red;
+    color: white;
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+    text-align: center;
+}
